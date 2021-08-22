@@ -1,0 +1,43 @@
+$go_back_btn_position: 40px;
+
+.go_back_btn_container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: $go_back_btn_position;
+  right: $go_back_btn_position * 3;
+  z-index: 1000;
+  font-size: 27px;
+  font-weight: $font-thin;
+  text-transform: uppercase;
+  padding: 4px 15px 0;
+  border-radius: 5px;
+  @include transition;
+
+  @include hover-supported {
+    padding: 15px 20px 5px;
+  }
+
+  @include phones {
+    font-size: 18px;
+    top: $go_back_btn_position * 0.25;
+    right: $go_back_btn_position * 3 * 0.25;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+}
+
+.go_back_btn {
+  // background: $purple;
+  display: flex;
+  width: auto;
+  height: 50px;
+  padding-left: 20px;
+
+  @include phones {
+    padding-left: 5px;
+  }
+}

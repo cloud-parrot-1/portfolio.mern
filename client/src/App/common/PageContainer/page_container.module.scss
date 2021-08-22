@@ -1,0 +1,15 @@
+.page_container {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+
+  &.spaced {
+    margin-top: 120px;
+
+    @media screen and (max-width: 576px) {
+      margin-top: 70px;
+      padding: 20px;
+    }
+  }
+}

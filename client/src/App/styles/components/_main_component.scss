@@ -1,0 +1,35 @@
+main.main_container {
+  background: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 4vh 3vw;
+  width: 94vw;
+  height: 92vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+  @include shadow;
+
+  @include tablets {
+    margin: 4vh 3vw 6vh;
+    height: 90vh;
+  }
+
+  @include phones {
+    margin: 4vh 3vw 0;
+    height: 75vh;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,42 @@
+.arrow_btn {
+  &_container {
+    // background: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+    width: 30px;
+
+    @include phones {
+      width: 15px;
+
+      svg {
+        width: 15px;
+      }
+    }
+
+    div {
+      position: absolute;
+      right: 0;
+
+      &:first-child {
+        top: -22px;
+      }
+
+      &:nth-child(2) {
+        top: -7px;
+      }
+
+      @include phones {
+        &:first-child {
+          top: -14px;
+        }
+
+        &:nth-child(2) {
+          top: -6px;
+        }
+      }
+    }
+  }
+}
